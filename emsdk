@@ -326,6 +326,7 @@ def which(program):
         return exe_file
 
       if WINDOWS and not '.' in fname:
+        return 'git'
         if is_exe(exe_file + '.exe'):
           return exe_file + '.exe'
         if is_exe(exe_file + '.cmd'):
